@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		298E37D424750CA300A5A896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298E37D324750CA300A5A896 /* Assets.xcassets */; };
 		298E37D724750CA300A5A896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298E37D624750CA300A5A896 /* Preview Assets.xcassets */; };
 		298E37DA24750CA300A5A896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298E37D824750CA300A5A896 /* LaunchScreen.storyboard */; };
+		298E37E224750D8C00A5A896 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 298E37E124750D8C00A5A896 /* GoogleService-Info.plist */; };
+		298E37E4247512D000A5A896 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E37E3247512D000A5A896 /* AuthProvider.swift */; };
+		E3916B2647A5EB5914698E64 /* Pods_MicrosoftSSOWithFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9499D38FA865C85DFC892D4A /* Pods_MicrosoftSSOWithFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		298E37D624750CA300A5A896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		298E37D924750CA300A5A896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		298E37DB24750CA300A5A896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298E37E124750D8C00A5A896 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "MicrosoftSSOWithFirebase/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		298E37E3247512D000A5A896 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		46455695331759DB0CBC07E1 /* Pods-MicrosoftSSOWithFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftSSOWithFirebase.debug.xcconfig"; path = "Target Support Files/Pods-MicrosoftSSOWithFirebase/Pods-MicrosoftSSOWithFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		9499D38FA865C85DFC892D4A /* Pods_MicrosoftSSOWithFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicrosoftSSOWithFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB103A9E7B166B53E5374E2 /* Pods-MicrosoftSSOWithFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrosoftSSOWithFirebase.release.xcconfig"; path = "Target Support Files/Pods-MicrosoftSSOWithFirebase/Pods-MicrosoftSSOWithFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3916B2647A5EB5914698E64 /* Pods_MicrosoftSSOWithFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +49,11 @@
 		298E37C124750CA000A5A896 = {
 			isa = PBXGroup;
 			children = (
+				298E37E124750D8C00A5A896 /* GoogleService-Info.plist */,
 				298E37CC24750CA000A5A896 /* MicrosoftSSOWithFirebase */,
 				298E37CB24750CA000A5A896 /* Products */,
+				86B46935666AC71005D36438 /* Pods */,
+				D1FA4175A287DD24E36422F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +75,7 @@
 				298E37D824750CA300A5A896 /* LaunchScreen.storyboard */,
 				298E37DB24750CA300A5A896 /* Info.plist */,
 				298E37D524750CA300A5A896 /* Preview Content */,
+				298E37E3247512D000A5A896 /* AuthProvider.swift */,
 			);
 			path = MicrosoftSSOWithFirebase;
 			sourceTree = "<group>";
@@ -75,6 +88,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		86B46935666AC71005D36438 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46455695331759DB0CBC07E1 /* Pods-MicrosoftSSOWithFirebase.debug.xcconfig */,
+				DDB103A9E7B166B53E5374E2 /* Pods-MicrosoftSSOWithFirebase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D1FA4175A287DD24E36422F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9499D38FA865C85DFC892D4A /* Pods_MicrosoftSSOWithFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 298E37DE24750CA300A5A896 /* Build configuration list for PBXNativeTarget "MicrosoftSSOWithFirebase" */;
 			buildPhases = (
+				F749ADBAC574F4EE398D27B4 /* [CP] Check Pods Manifest.lock */,
 				298E37C624750CA000A5A896 /* Sources */,
 				298E37C724750CA000A5A896 /* Frameworks */,
 				298E37C824750CA000A5A896 /* Resources */,
+				10B08E927583CD317B85047B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +166,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				298E37DA24750CA300A5A896 /* LaunchScreen.storyboard in Resources */,
+				298E37E224750D8C00A5A896 /* GoogleService-Info.plist in Resources */,
 				298E37D724750CA300A5A896 /* Preview Assets.xcassets in Resources */,
 				298E37D424750CA300A5A896 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10B08E927583CD317B85047B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicrosoftSSOWithFirebase/Pods-MicrosoftSSOWithFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MicrosoftSSOWithFirebase/Pods-MicrosoftSSOWithFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MicrosoftSSOWithFirebase/Pods-MicrosoftSSOWithFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F749ADBAC574F4EE398D27B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MicrosoftSSOWithFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		298E37C624750CA000A5A896 /* Sources */ = {
@@ -148,6 +223,7 @@
 			files = (
 				298E37CE24750CA000A5A896 /* AppDelegate.swift in Sources */,
 				298E37D024750CA000A5A896 /* SceneDelegate.swift in Sources */,
+				298E37E4247512D000A5A896 /* AuthProvider.swift in Sources */,
 				298E37D224750CA000A5A896 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +358,7 @@
 		};
 		298E37DF24750CA300A5A896 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46455695331759DB0CBC07E1 /* Pods-MicrosoftSSOWithFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +379,7 @@
 		};
 		298E37E024750CA300A5A896 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDB103A9E7B166B53E5374E2 /* Pods-MicrosoftSSOWithFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
